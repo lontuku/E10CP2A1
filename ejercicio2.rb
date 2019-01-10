@@ -18,7 +18,7 @@ module Formula
 end
 
 class Rectangulo
-	attr_accessor :base, :altura
+	attr_reader :base, :altura
 	include Formula
 	def initialize(base, altura)
 	@base= base
@@ -31,7 +31,7 @@ class Rectangulo
 end
 
 class Cuadrado
-	attr_accessor :lado
+	attr_reader :lado
 	include Formula
 	def initialize(lado)
 	@lado = lado
