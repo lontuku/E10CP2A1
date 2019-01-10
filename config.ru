@@ -1,7 +1,9 @@
 # config.ru
 require 'rack'
+require 'byebug'
 class MiPrimeraWebApp
   def call(env)
+  	debugger
     if env['REQUEST_PATH'] == '/index'
      	[200, { 'Content-Type' => 'text/html' }, ['<h1> Estás en el Index!</h1>']]
     
